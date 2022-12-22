@@ -13,3 +13,20 @@ const greetings = (name = "Sam") => {
 };
 
 greetings();
+
+const person = {
+  name: "joe",
+  age: 18,
+};
+
+const person2 = { ...person, true_age: 20 };
+console.log(person2);
+
+const bev = [3, 6, 9, 5];
+
+bev.map((bevi) => {
+  bevi += 2;
+  console.log(bevi);
+});
+
+bev.forEach(() => console.log("num"));
