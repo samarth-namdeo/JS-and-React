@@ -1,11 +1,11 @@
 import React from "react";
 
-const Header = () => {
+const Header = (props) => {
   return (
     <>
       <nav className="navbar navbar-expand-lg navbar-light bg-light">
         <a className="navbar-brand" href="#">
-          To-Do-List
+          {props.title}
         </a>
         <button
           className="navbar-toggler"
